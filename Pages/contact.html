@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Scania Trucks</title>
+</head>
+<body>
+    <header>
+        <p>Welcome to our contact page</p>
+        <nav class="navi-button">
+    <button onclick="location.href='../index.html'">HOME</button>
+    <button onclick="location.href='Services.html'">Services</button>
+    <button onclick="location.href='About us.html'">About Us</button>
+    <button onclick="location.href='contact.html'">Contact Us</button>
+    <button onclick="location.href='Product.html'">Products</button>
+
+</nav>
+    </header>
+    <main>
+    <h1>Contact Us</h1>
+
+    <img src="../Assets/images.png" alt="Contact Us">
+    <p>If you have any questions or inquiries, please feel free to reach out to us using the form below:</p>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> info@scania.com</p>
+    <p><strong>Address:</strong> Scania AB, SE-151 87 Södertälje, Sweden</p>
+    <!--add map-->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.123456789012!2d17.633123456789012!3d59.187654321098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f7a1234567890%3A0x1234567890abcdef!2sScania+AB!5e0!3m2!1sen!2sse!4v1612345678901"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>We look forward to hearing from you!</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Scania. All rights reserved.</p>
+    </footer>
+</body>
+</html>
