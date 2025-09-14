@@ -48,6 +48,7 @@ button:hover{
     transform: scale(1.1);
     transition: 0.3s;
 }
+
 /*Styling the main content area*/
 main{
     padding: 0% 20px;
@@ -204,13 +205,27 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -2px 4cm rgba(0, 0, 0, 0.3);
     font-size: 14px;
     color: darkslategray;
     transition: background-color 0.3s ease;
     &:hover {
         background-color: darkslategray;
         color: white;
+    }
+}
+/*aplying edits on social media icons*/
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover {
+        color: darkcyan;
+        transform: scale(1.1);
+        transition: 0.3s;
+
     }
 }
 /*editing form fields*/
