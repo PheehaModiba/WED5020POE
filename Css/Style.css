@@ -1,0 +1,292 @@
+/*Css styling*/
+/*General body styling*/
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: darkslategray;
+    line-height: 1.6;
+    font-size: 18px;
+}
+/*Header styling*/
+header{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/*applying hover effects on buttons*/
+button:hover{
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/*applying anamation on buttons*/
+button{
+    transition: 0.3s;
+    transform: scale(1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkslategray;
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+/*making buttons show a glow effect on hover*/
+button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/*Styling the main content area*/
+main{
+    padding: 0% 20px;
+    margin-bottom: 60px; /* To ensure content is not hidden behind the footer */
+    min-height: 80vh; /* Ensures main takes up at least 80% of the viewport height */
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: darkslategray;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: cadetblue;
+    color: darkslategray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    }
+    /*Adding hover effect to main content area*/
+    main:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+        transition: 0.3s;
+}
+/*Styling links*/
+a {
+    color: aquamarine;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+/*Styling headings*/
+h1,h2{
+    color:beige;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /*underline headings*/
+    text-decoration: underline;
+}
+h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+/*Styling paragraphs*/
+p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color:black;
+    text-align: center;
+    text-justify: inter-word;
+}
+/*Styling lists*/
+ul, li {
+    margin-bottom: 10px;
+    color: beige;
+    text-align: center;
+    text-justify: inter-word;
+}
+li {
+    margin-left: 20px;
+    list-style-type: disc;
+    line-height: 1.6;
+    color:black;
+    text-align: center;
+}
+/*image styling*/
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+
+    }
+    
+}
+/*Adding bounce animation to images*/
+img.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+/*media query for responsiveness*/
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p, li {
+        font-size: 14px;
+    }
+}
+/*Footer styling*/
+footer{
+    background-color:azure;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    color: darkslategray;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: darkslategray;
+        color: white;
+    }
+}
+/*editing form fields*/
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Adding focus effect to form fields*/
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: darkcyan;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
+}
+/*Styling form labels*/
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: darkslategray;
+    text-align: left;
+}
+/*Adding hover effect to form labels*/
+label:hover {
+    color: darkcyan;
+    transition: 0.3s;
+}
+/*Styling submit button*/
+input[type="submit"] {  
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    hover {
+        background-color:green ;
+        color: white;
+        transition: 0.3s;
+
+    }
+}
+/*Adding hover effect to submit button*/
+input[type="submit"]:hover {
+    background-color: darkcyan;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/*adding focus effect to submit button*/
+input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
+}
+/*Adding animation to submit button*/
+input[type="submit"] {
+    animation: pulse 2s infinite;
+}
+/*Defining pulse animation*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*End of Css styling*/
