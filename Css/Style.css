@@ -164,28 +164,13 @@ img{
     }
     
 }
-/*Adding bounce animation to images*/
-img.bounce {
-    animation: bounce 2s infinite;
+img:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
-/*media query for responsiveness*/
-@media (max-width: 768px) {
-    main {
-        padding: 10px;
-        font-size: 14px;
-    }
+/*Responsive design for smaller screens*/
+@media (max-width: 768px) {     
     h1 {
         font-size: 28px;
     }
