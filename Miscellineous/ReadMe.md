@@ -27,3 +27,7 @@ This project is a website for Scania Trucks, providing information about product
 ## Credits
 - [Font Awesome](https://fontawesome.com/) for social media icons
 - Scania official resources for company information
+## referencess
+- "https://www.scania.com/ where we get to know about Scania's relationships with other companies
+-"https://www.scania.com/sustainability/ where we findout more in details about Scania
+-"https://www.scania.com/products/" Where we get to know about Scania's products
