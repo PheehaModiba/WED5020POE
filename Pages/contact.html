@@ -55,3 +55,47 @@
     </footer>
 </body>
 </html>
+<!--adding java script-->
+<script>
+    // Example JavaScript code for future enhancements
+    console.log("Contact page loaded successfully.");
+    // Additional of interactive features
+    document.querySelectorAll('.navi-button button').forEach(button => {
+        button.addEventListener('click', () => {
+            console.log(`${button.textContent} button clicked.`);
+        });
+    });
+    //form validation
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields before submitting the form.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+    //name validation
+    document.getElementById('name').addEventListener('input', function() {
+        const name = document.getElementById('name').value;
+        if (name === '') {
+            alert('Name field cannot be empty.');
+        }
+    });
+    //email validation
+    document.getElementById('email').addEventListener('input', function() {
+        const email = document.getElementById('email').value;
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (!email.match(emailPattern)) {
+            alert('Please enter a valid email address.');
+        }
+    });
+    //message validation
+    document.getElementById('message').addEventListener('input', function() {
+        const message = document.getElementById('message').value;
+        if (message === '') {
+            alert('Message field cannot be empty.');
+        }
+    });
+</script>

@@ -19,7 +19,7 @@
                 let accessGranted = confirm("Do you want to access Scania Trucks website?");
                 if (!accessGranted) {
                     alert("Access Denied. You will be redirected.");
-                    window.location.href = "https://www.scania.com";
+                 
                 } else {
                     alert("Welcome to Scania Trucks!");
                 }
@@ -36,32 +36,11 @@
     <button onclick="location.href='Pages/Product.html'">Products</button> <!--linking to products page-->
 </nav>
     </header>
-    <!--javascript gallery lightbox-->
-    <script>
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxClose = document.getElementById('lightbox-close');
-        galleryItems.forEach(item => {
-            item.addEventListener('click', function(){
-                lightbox.style.display = 'block';
-                lightboxImg.src = this.src;
-            });
-        });
-        lightboxClose.addEventListener('click', function(){
-            lightbox.style.display = 'none';
-        });
-        lightbox.addEventListener('click', function(e){
-            if(e.target !== lightboxImg){
-                lightbox.style.display = 'none';
-            }
-        });
-    </script>
-    
+     
     <br> <!--main content of the webpage-->
   <main>
 
-    
+
     <img style="text-align: center;" src="./Assets/images.png" alt="Scania Truck" style="width:600px; height: 400px;">
     <p><strong></strong>Explore our range of trucks and services.</strong></p>
     <br>
@@ -127,3 +106,35 @@
 
 </body>
 </html>
+<!--adding java script-->
+<script>
+    // Example JavaScript code for future enhancements
+    console.log("Home page loaded successfully.");
+    // Additional of interactive features
+    document.querySelectorAll('.navi-button button').forEach(button => {
+        button.addEventListener('click', () => {
+            console.log(`${button.textContent} button clicked.`);
+        });
+    });
+    //button hover effect
+    document.querySelectorAll('.navi-button button').forEach(button => {
+        button.addEventListener('mouseover', () => {
+            button.style.backgroundColor = 'gold';
+            button.style.color = '#fff';
+        });
+        button.addEventListener('mouseout', () => {
+            button.style.backgroundColor = '';
+            button.style.color = '';
+        });
+    });
+    //dynamic content loading
+    function loadDynamicContent() {
+        const dynamicSection = document.createElement('section');
+        dynamicSection.innerHTML = `
+            <h2>Latest News</h2>
+            <p>Stay tuned for the latest updates and innovations from Scania.</p>
+        `;
+        document.querySelector('main').appendChild(dynamicSection);
+    }
+    loadDynamicContent();
+</script>
