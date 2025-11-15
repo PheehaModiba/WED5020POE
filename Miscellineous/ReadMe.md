@@ -1,5 +1,21 @@
 <changelog>
 
+Scania/
+│__ Pages  
+|    ├-- about us.html          # About page  
+|    ├-- contact.html        # Contact page  
+│    |-- Product.html
+|    |-- Services.html
+|    |-- Enquiry.html
+├── css/
+│   └── styles.css           # Main stylesheet   
+│
+└── assets/
+|     ├── images             # Images used in the site  
+|     
+|
+|__ index.html               #Home page 
+
 
 # Scania Trucks Website
 
@@ -24,13 +40,18 @@ This project is a website for Scania Trucks, providing information about product
 2. Navigate using the buttons in the header.
 3. Explore the content and features.
 
+## updates from part 2 feedback
+-used harvard refferencing style
+-fixed the layout of the footer
+
 ## Credits
 - [Font Awesome](https://fontawesome.com/) for social media icons
 - Scania official resources for company information
 ## referencess
-- "https://www.scania.com/ where we get to know about Scania's relationships with other companies
--"https://www.scania.com/sustainability/ where we findout more in details about Scania
--"https://www.scania.com/products/" Where we get to know about Scania's products
+- Arcording to "https://www.scania.com/ "
+- According to "https://www.scania.com/sustainability/"
+- According to "https://www.scania.com/products/" 
+- According to https://bodybuilder.scania.com/content/bodybuilder/trucks/en/local-information/uk/quick-reference-guides.html"
 
 ## responsive website in different mobile views
 
@@ -39,4 +60,16 @@ This project is a website for Scania Trucks, providing information about product
 -./assets/Mobile view 425px
 -./assets/mobile view 475px
 -./assets/tablet view 764px
+
+## part 3 changelog
+implemented java script in:
+                            1. index.html
+                            2. contact.html
+                            3. services.html
+                            4. enquiry.html
+                            5. product.html
+                            6. about us.html
+implemented SEO keywords
+implemented SEO meta tags
+
 
