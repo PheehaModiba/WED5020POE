@@ -33,7 +33,7 @@
   <main>
 
 
-    <img style="text-align: center;" src="./Assets/images.png" alt="Scania Truck" style="width:600px; height: 400px;">
+    <img style="text-align: center;" src="./Assets/images.png" id="scanialogo" alt="Scania Truck" style="width:600px; height: 400px;">
     <p><strong></strong>Explore our range of trucks and services.</strong></p>
     <br>
     <h2>About Scania</h2>
@@ -151,4 +151,30 @@
         document.querySelector('main').appendChild(starContainer);
     }
     createStarRating();
+    //implementing gallery lightbox
+    function setupLightbox() {
+        const images = document.querySelectorAll('main img');
+        const lightbox = document.createElement('div');
+        lightbox.id = 'scanialogo';
+        document.body.appendChild(lightbox);
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                lightbox.classList.add('active');
+                const img = document.createElement('img');
+                img.src = image.src;
+                while (lightbox.firstChild) {
+                    lightbox.removeChild(lightbox.firstChild);
+                }
+                lightbox.appendChild(img);
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+    }
+    setupLightbox();
+
+
 </script>

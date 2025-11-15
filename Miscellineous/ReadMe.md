@@ -71,5 +71,6 @@ implemented java script in:
                             6. about us.html
 implemented SEO keywords
 implemented SEO meta tags
+implemented gallery lightbox
 
 
