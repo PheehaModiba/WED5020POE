@@ -227,21 +227,10 @@ img:hover {
     
 }
 footer{
-    background-color:azure;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4cm rgba(0, 0, 0, 0.3);
-    font-size: 14px;
+   background-color: whitesmoke;
     color: darkslategray;
-    transition: background-color 0.3s ease;
-    &:hover {
-        background-color: darkslategray;
-        color: white;
-    }
+    text-align: center;
+
 }
 /*aplying edits on social media icons*/
 .social-icons a {
